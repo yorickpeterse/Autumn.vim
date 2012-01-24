@@ -1,31 +1,52 @@
-# About
+# Autumn
 
-Autumn.vim is a color scheme for Vim 7.3 and newer. The colors are inspired by the colors
-that can be found during the autumn.
+Autumn is a color scheme inspired by the colors you can find in the autumn.
+Originally it was written as a color scheme for Komodo IDE but was ported to
+Vim by Kenneth Love and Chris Jones. Since I moved to Vim I've made several
+changes and improvements to the color scheme, however if it wasn't for Ken and
+Chris I probably wouldn't have any clue where to start.
+
+More information about the color scheme (as well as an up to date version) can
+be found here: https://github.com/YorickPeterse/Autumn.vim
+
+## Requirements
+
+* Vim 7 or newer (7.3 or newer is recommended)
+* A version of Vim capable of displaying lots of colors. Autumn was designed
+  to be used in combination with Gvim, Macvim or similar implementations of
+  Vim. However, Autumn does offer support for 256 color terminals but the
+  colors will look slightly different.
 
 ## Installation
 
-Copy the file "autumn.vim" to ~/.vim/colors/autumn.vim and add the following line to your
-.vimrc file:
+Assuming you've downloaded this file and placed it somewhere all you have to
+do is move it into your "colordirectory:
 
-    color autumn 
+    $ cp ~/Downloads/autumn.vim ~/.vim/color/
 
-## Supported Languages
+## Supported Languages & Features
 
-Autumn has a wide range of supported languages. The following languages have been tested
-and should be highlighted correctly:
+Autumn supports most, if not all features provided by Vim as well as a large
+amount of programming/scripting languages such as Ruby and C. Autumn comes
+with tweaked colors for the following languages:
 
-* HTML
-* CSS
-* PHP
 * Ruby
+* CSS
+* HTML
+* PHP
 * Python
 * Javascript
-* Diffs
 
-Other languages such as Perl and C should be highlighted properly but have been untested.
+Other languages such as Java or more obscure ones such as Rust. As long as
+there's a proper syntax highlighting plugin for the language this color scheme
+should be able to handle it just fine. However, if this isn't the case feel
+free to submit patches using Github.
+
+Once installed you can activate it by running ``:color autumn`` in a Vim
+session.
 
 ## License
 
-Autumn.vim is licensed under the Creative Commons ShareAlike 3 license. Feel free to modify
-and share it with others as long as you're nice enough to give attribution.
+Autumn.vim is licensed under the Creative Commons ShareAlike 3 license. Feel
+free to modify and share it with others as long as you're nice enough to give
+attribution.
