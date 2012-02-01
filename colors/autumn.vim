@@ -95,7 +95,7 @@ hi Directory    guifg=#7895B7 guibg=NONE    ctermfg=103 ctermbg=none gui=none
 
 " Commong syntax elements.
 hi Comment    guifg=#6B6B6B gui=none ctermfg=242
-hi Todo       guifg=#cccccc gui=none ctermfg=252 guibg=NONE
+hi Todo       guifg=#cccccc gui=none ctermfg=252 guibg=NONE ctermbg=none
 hi Boolean    guifg=#EB5D49 gui=none ctermfg=167
 hi String     guifg=#92AF72 gui=none ctermfg=107
 hi Identifier guifg=#F3F2CC gui=none ctermfg=230
