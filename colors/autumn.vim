@@ -50,6 +50,7 @@
 " Website: https://github.com/YorickPeterse/Autumn.vim
 "
 set background=dark
+set t_Co=256
 
 " Basic "maintenance" before setting our own colors and what not.
 hi clear
