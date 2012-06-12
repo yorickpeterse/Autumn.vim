@@ -22,7 +22,7 @@
 " Assuming you've downloaded this file and placed it somewhere all you have to
 " do is move it into your "color" directory:
 "
-"     $ cp ~/Downloads/autumn.vim ~/.vim/color/
+"     $ cp ~/Downloads/autumn.vim ~/.vim/colors/
 "
 " ## Supported Languages & Features
 "
