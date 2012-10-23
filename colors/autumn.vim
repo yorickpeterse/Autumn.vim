@@ -109,6 +109,8 @@ hi PreProc    guifg=#faf4c6 gui=none ctermfg=230
 hi Operator   guifg=#ffffff gui=none ctermfg=15
 hi Special    guifg=#ffffff gui=none ctermfg=15
 
+hi link StorageClass Normal
+
 " Ruby
 hi rubySymbol           guifg=#E8A75C guibg=NONE ctermfg=179
 hi rubyConstant         guifg=#F3F2CC guibg=NONE ctermfg=230
@@ -130,36 +132,15 @@ hi phpMemberSelector  guifg=#ffffff guibg=NONE ctermfg=15
 hi phpC1Top           guifg=#ffffff guibg=NONE ctermfg=15
 
 " CSS
-hi cssIdentifier guifg=#F3F2CC guibg=NONE ctermfg=230
+hi cssIdentifier   guifg=#F3F2CC guibg=NONE ctermfg=230
+hi cssFontProp     guifg=#F3F2CC guibg=NONE ctermfg=230
+hi cssImportant    guifg=#EB5D49 guibg=NONE ctermfg=167
+hi cssColor        guifg=#B3EBBF guibg=NONE ctermfg=151
+hi cssBraces       guifg=#ffffff guibg=NONE ctermfg=15
+hi cssTagName      guifg=#CBC983 guibg=NONE ctermfg=186
+hi cssFunctionName guifg=#CBC983 guibg=NONE ctermfg=186
 
-" The css*Prop rules are used to style the properies for the selector. All
-" properties, such as background and display will be set to the same color.
-hi cssFontProp             guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssColorProp            guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssTextProp             guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssBoxProp              guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssRenderProp           guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssAuralProp            guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssGeneratedContentProp guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssPagingProp           guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssTableProp            guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssUIProp               guifg=#F3F2CC guibg=NONE ctermfg=230
-
-" Styles for various CSS attributes.
-hi cssFontAttr             guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssCommonAttr           guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssColorAttr            guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssTextAttr             guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssBoxAttr              guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssGeneratedContentAttr guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssUIAttr               guifg=#92AF72 guibg=NONE ctermfg=107
-hi cssImportant            guifg=#EB5D49 guibg=NONE ctermfg=167
-hi cssColor                guifg=#B3EBBF guibg=NONE ctermfg=151
-hi cssFunctionName         guifg=#CBC983 guibg=NONE ctermfg=186
-hi cssFunction             guifg=#CBC983 guibg=NONE ctermfg=186
-hi cssClassName            guifg=#CBC983 guibg=NONE ctermfg=186
-hi cssBraces               guifg=#ffffff guibg=NONE ctermfg=15
-hi cssTagName              guifg=#CBC983 guibg=NONE ctermfg=186
+hi! link cssVendor cssIdentifier
 
 " Diffs
 hi diffAdded     guifg=#ffffff guibg=#7D9662 ctermfg=15  ctermbg=101
