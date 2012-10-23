@@ -131,6 +131,8 @@ hi phpComparison      guifg=#ffffff guibg=NONE ctermfg=15
 hi phpMemberSelector  guifg=#ffffff guibg=NONE ctermfg=15
 hi phpC1Top           guifg=#ffffff guibg=NONE ctermfg=15
 
+hi link phpStorageClass Type
+
 " CSS
 hi cssIdentifier   guifg=#F3F2CC guibg=NONE ctermfg=230
 hi cssFontProp     guifg=#F3F2CC guibg=NONE ctermfg=230
