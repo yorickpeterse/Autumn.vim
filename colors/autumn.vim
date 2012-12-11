@@ -172,5 +172,11 @@ hi pythonComment      guifg=#6B6B6B guibg=NONE ctermfg=242
 " Javascript
 hi javascriptNumber   guifg=#B3EBBF ctermfg=151 gui=none ctermfg=208
 
+" Coffeescript
+hi link coffeeSpecialIdent rubyInstanceVariable
+hi link coffeeObject       Constant
+hi link coffeeRegex        rubyRegexp
+hi link coffeeObjAssign    rubyFunction
+
 " Annoy fellow Vim users by enforcing these indentation rules.
 " vim: set tw=80 shiftwidth=2 softtabstop=2 tabstop=2 expandtab
