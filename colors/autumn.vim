@@ -93,7 +93,7 @@ hi ErrorMsg     guifg=#ffffff guibg=#EB5D49 ctermfg=15  ctermbg=167  gui=none
 hi Error        guifg=#ffffff guibg=#EB5D49 ctermfg=15  ctermbg=167  gui=none
 hi Directory    guifg=#7895B7 guibg=NONE    ctermfg=103 ctermbg=none gui=none
 
-" Commong syntax elements.
+" Common syntax elements.
 hi Comment    guifg=#6B6B6B gui=none ctermfg=242
 hi Todo       guifg=#cccccc gui=none ctermfg=252 guibg=NONE ctermbg=none
 hi Boolean    guifg=#EB5D49 gui=none ctermfg=167
@@ -112,37 +112,26 @@ hi Special    guifg=#ffffff gui=none ctermfg=15
 hi link StorageClass Normal
 
 " Ruby
-hi rubySymbol           guifg=#E8A75C guibg=NONE ctermfg=179
-hi rubyConstant         guifg=#F3F2CC guibg=NONE ctermfg=230
-hi rubyInstanceVariable guifg=#7895B7 guibg=NONE ctermfg=103
-hi rubyClassVariable    guifg=#7895B7 guibg=NONE ctermfg=103
-hi rubyModule           guifg=#EB5D49 guibg=NONE ctermfg=167
-hi rubyClass            guifg=#EB5D49 guibg=NONE ctermfg=167
-hi rubyFunction         guifg=#CBC983 guibg=NONE ctermfg=186
-hi rubyDefine           guifg=#EB5D49 guibg=NONE ctermfg=167
-hi rubyRegexp           guifg=#E8A75C guibg=NONE ctermfg=179
+hi rubySymbol guifg=#E8A75C guibg=NONE ctermfg=179
 
-" PHP
-hi phpVarSelector     guifg=#F3F2CC guibg=NONE ctermfg=230
-hi phpSpecialFunction guifg=#CBC983 guibg=NONE ctermfg=186
-hi phpIdentifier      guifg=#7895B7 guibg=NONE ctermfg=103
-hi phpVarSelector     guifg=#7895B7 guibg=NONE ctermfg=103
-hi phpComparison      guifg=#ffffff guibg=NONE ctermfg=15
-hi phpMemberSelector  guifg=#ffffff guibg=NONE ctermfg=15
-hi phpC1Top           guifg=#ffffff guibg=NONE ctermfg=15
-
-hi link phpStorageClass Type
+hi link rubyConstant         Normal
+hi link rubyInstanceVariable Directory
+hi link rubyClassVariable    rubyInstanceVariable
+hi link rubyClass            Statement
+hi link rubyModule           RubyClass
+hi link rubyFunction         Function
+hi link rubyDefine           Statement
+hi link rubyRegexp           rubySymbol
 
 " CSS
-hi cssIdentifier   guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssFontProp     guifg=#F3F2CC guibg=NONE ctermfg=230
-hi cssImportant    guifg=#EB5D49 guibg=NONE ctermfg=167
-hi cssColor        guifg=#B3EBBF guibg=NONE ctermfg=151
-hi cssBraces       guifg=#ffffff guibg=NONE ctermfg=15
-hi cssTagName      guifg=#CBC983 guibg=NONE ctermfg=186
-hi cssFunctionName guifg=#CBC983 guibg=NONE ctermfg=186
-
-hi! link cssVendor cssIdentifier
+hi link cssIdentifier   Identifier
+hi link cssFontProp     cssIdentifier
+hi link cssImport       Statement
+hi link cssColor        Number
+hi link cssBraces       Operator
+hi link cssTagName      Function
+hi link cssFunctionName cssTagName
+hi link cssVendor       cssIdentifier
 
 " Diffs
 hi diffAdded     guifg=#ffffff guibg=#7D9662 ctermfg=15  ctermbg=101
@@ -158,22 +147,21 @@ hi link DiffAdd    diffAdded
 hi link DiffDelete diffRemoved
 
 " HTML
-hi htmlString         guifg=#92AF72 guibg=NONE ctermfg=107
-hi htmlTag            guifg=#F3F2CC guibg=NONE ctermfg=230
-hi htmlSpecialTagName guifg=#F3F2CC guibg=NONE ctermfg=230
-hi htmlTagN           guifg=#F3F2CC guibg=NONE ctermfg=230
-hi htmlTagName        guifg=#F3F2CC guibg=NONE ctermfg=230
-hi htmlLink           guifg=#7895B7 guibg=NONE ctermfg=103
-hi htmlArg            guifg=#CBC983 guibg=NONE ctermfg=186
+hi link htmlString  String
+hi link htmlTag     Normal
+hi link htmlTagN    htmlTag
+hi link htmlTagName htmlTag
+hi link htmlLink    Directory
+hi link htmlArg     Function
 
 " Python
-hi pythonComment      guifg=#6B6B6B guibg=NONE ctermfg=242
+hi link PythonComment Comment
 
 " Javascript
-hi javascriptNumber   guifg=#B3EBBF ctermfg=151 gui=none ctermfg=208
+hi link javascriptNumber Number
 
 " Coffeescript
-hi link coffeeSpecialIdent rubyInstanceVariable
+hi link coffeeSpecialIdent Directory
 hi link coffeeObject       Constant
 hi link coffeeRegex        rubyRegexp
 hi link coffeeObjAssign    rubyFunction
