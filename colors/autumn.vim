@@ -178,5 +178,11 @@ hi link coffeeObject       Constant
 hi link coffeeRegex        rubyRegexp
 hi link coffeeObjAssign    rubyFunction
 
+" Vala
+hi link valaStorage   valaRepeat
+hi link valaModifier  valaRepeat
+hi link valaCharacter Character
+hi link valaType      Function
+
 " Annoy fellow Vim users by enforcing these indentation rules.
 " vim: set tw=80 shiftwidth=2 softtabstop=2 tabstop=2 expandtab
