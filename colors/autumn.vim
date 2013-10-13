@@ -172,5 +172,12 @@ hi link valaModifier  valaRepeat
 hi link valaCharacter Character
 hi link valaType      Function
 
+" D
+
+" I prefer operators such as `this` and `new` to be red instead of the default
+" colour.
+hi link dOperator   Keyword
+hi link dAnnotation Directory
+
 " Annoy fellow Vim users by enforcing these indentation rules.
 " vim: set tw=80 shiftwidth=2 softtabstop=2 tabstop=2 expandtab
