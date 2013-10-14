@@ -178,6 +178,7 @@ hi link valaType      Function
 " colour.
 hi link dOperator   Keyword
 hi link dAnnotation Directory
+hi link dScopeDecl  Keyword
 
 " Annoy fellow Vim users by enforcing these indentation rules.
 " vim: set tw=80 shiftwidth=2 softtabstop=2 tabstop=2 expandtab
